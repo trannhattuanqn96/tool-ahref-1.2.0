@@ -1,31 +1,31 @@
 {
-  "name": "muatool",
-  "version": "1.2.0",
-  "description": "MuaTool.com - Optimized for macOS",
-  "main": "main.js",
-  "author": "MuaTool.com",
-  "license": "ISC",
-  "scripts": {
-    "start": "electron .",
-    "dev": "electron . --enable-logging",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "make:win": "electron-forge make --platform=win32 --arch=x64",
-    "make:mac": "electron-forge make --platform=darwin --arch=x64",
-    "clean": "rimraf node_modules package-lock.json"
-  },
-  "dependencies": {
-    "node-machine-id": "^1.1.12",
-    "socket.io-client": "^4.8.1"
-  },
-  "devDependencies": {
-    "@electron-forge/cli": "^6.4.2",
-    "@electron-forge/maker-dmg": "^6.4.2",
-    "@electron-forge/maker-squirrel": "^6.4.2",
-    "@electron-forge/maker-zip": "^6.4.2",
-    "electron": "^34.2.0",
-    "rimraf": "^5.0.5"
-  },
-  "keywords": [],
-  "type": "commonjs"
+	"name": "cheat-1.2.0",
+	"version": "1.2.0",
+	"description": "cheat-1.2.0",
+	"main": "main.js",
+	"author": "cheat-1.2.0",
+	"license": "ISC",
+	"scripts": {
+		"start": "electron .",
+		"dev": "electron . --enable-logging",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		"make:win": "electron-forge make --platform=win32 --arch=x64",
+		"make:mac": "electron-forge make --platform=darwin --arch=x64",
+		"clean": "rimraf node_modules package-lock.json"
+	},
+	"dependencies": {
+		"node-machine-id": "^1.1.12",
+		"socket.io-client": "^4.8.1"
+	},
+	"devDependencies": {
+		"@electron-forge/cli": "^6.4.2",
+		"@electron-forge/maker-dmg": "^6.4.2",
+		"@electron-forge/maker-squirrel": "^6.4.2",
+		"@electron-forge/maker-zip": "^6.4.2",
+		"electron": "^34.2.0",
+		"rimraf": "^5.0.5"
+	},
+	"keywords": [],
+	"type": "commonjs"
 }

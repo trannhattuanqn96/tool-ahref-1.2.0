@@ -1,0 +1,42 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug Electron Main Process",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceFolder}/main.js",
+			"runtimeExecutable": "C:\\Users\\Gofiber\\AppData\\Roaming\\npm\\electron.cmd",
+			"runtimeArgs": ["--inspect=9229", "--remote-debugging-port=9222"],
+			"args": ["."],
+			"cwd": "${workspaceFolder}",
+			"outputCapture": "std",
+			"console": "integratedTerminal",
+			"skipFiles": ["<node_internals>/**"],
+			"env": {
+				"NODE_ENV": "development",
+				"ELECTRON_IS_DEV": "1"
+			}
+		},
+		{
+			"name": "Debug Electron Renderer Process",
+			"type": "chrome",
+			"request": "attach",
+			"port": 9222,
+			"webRoot": "${workspaceFolder}",
+			"timeout": 30000
+		}
+	],
+	"compounds": [
+		{
+			"name": "Debug All (Electron Main + Renderer)",
+			"configurations": [
+				"Debug Electron Main Process",
+				"Debug Electron Renderer Process"
+			]
+		}
+	]
+}
